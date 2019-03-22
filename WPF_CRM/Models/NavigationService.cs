@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using WPF_CRM.ViewModels;
 
 namespace WPF_CRM.Models
 {

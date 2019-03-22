@@ -6,7 +6,21 @@
              xmlns:local="clr-namespace:WPF_CRM.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Column="1" Grid.Row="1" Background="Aqua" Margin="10" Text="{Binding LoginText,Mode=TwoWay}"/>
+        <TextBox Grid.Column="1" Grid.Row="2" Background="Aqua" Margin="10" Text="{Binding PasswordText,Mode=TwoWay}"/>
+        <Button Content="Login" Grid.Column="1" Grid.Row="3"  Margin="10" Command="{Binding LoginInCommand}"/>
     </Grid>
 </UserControl>

@@ -10,31 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using WPF_CRM.Models;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_CRM
+namespace WPF_CRM.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for StudentPanelView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StudentPanelView : UserControl
     {
-        public MainWindow()
+        public StudentPanelView()
         {
             InitializeComponent();
         }
-
-
-        private void Window_Closed(object sender, EventArgs e)
-        {
-            NavigationService.Instance.UnregisterWindow();
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Instance.RegisterWindow(this);
-        }
-
     }
 }
